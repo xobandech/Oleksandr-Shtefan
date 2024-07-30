@@ -7,11 +7,11 @@ function sum_to_n_a(n: number) {
 }
 
 function sum_to_n_b(n: number) {
-
+    return n * (n + 1) / 2
 }
 
 function sum_to_n_c(n: number) {
-
 }
 
-console.log('A -', sum_to_n_a(5)) // 15
+console.log('A -', sum_to_n_a(0)) // 15
+console.log('B -', sum_to_n_b(0)) // 15
