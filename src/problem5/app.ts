@@ -1,10 +1,12 @@
-// So what i know about CRUD, CRUD - Create, Read, Update and Delete
-// First i will initialize app, 
-// Then create controller and a service functions 
-// Also i need a database, i will use MongoDB free tier cluster
+/* 
+/ Time spend: ~1h
+/ So what i know about CRUD, CRUD - Create, Read, Update and Delete
+/ First i will initialize app, 
+/ Then create controller and a service functions 
+/ Also i need a database, i will use MongoDB free tier cluster
 
-// For initializing TS Express app i used this guide: https://blog.logrocket.com/how-to-set-up-node-typescript-express/
-
+/ For initializing TS Express app i used this guide: https://blog.logrocket.com/how-to-set-up-node-typescript-express/
+*/
 import mongoose, { Schema } from "mongoose"
 import express, { Request, Response } from "express"
 import dotenv from "dotenv"
