@@ -1,4 +1,4 @@
-Score Board API
+# Score Board API
 
 Diagram: https://drive.google.com/file/d/1iljcp_O_COXqES1i_nOYKv0sj-deLWN6/view?usp=sharing
 
