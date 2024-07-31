@@ -4,9 +4,10 @@ Diagram: https://drive.google.com/file/d/1iljcp_O_COXqES1i_nOYKv0sj-deLWN6/view?
 
 Base link `baselink`
 
-Get Top 10 Users
+<h4>Get Top 10 Users</h4><br/>
+<div>
 Description:
-    Returns top 10 users with their scores
+    <strong>Returns top 10 users with their scores</strong>
 Apply Auth Middleware
 GET "/"
 Headers: {
@@ -15,14 +16,15 @@ Headers: {
 }
 
 Response: {
-    "status": boolean,
-    "data": {top 10 users with their scores}
+"status": boolean,
+"data": {top 10 users with their scores}
 }
 
-
-Make an action
+</div>
+<div>
+<h4>Make an action</h4>
 Description:
-    Adds score to user based on action user did
+   </strong> Adds score to user based on action user did</strong>
 Apply Auth Middleware
 POST "/action"
 Headers: {
@@ -34,14 +36,17 @@ Payload: {
 }
 
 Response: {
-    "status": boolean,
-    "data": {new score}
+"status": boolean,
+"data": {new score}
 }
 
-For the GET request to /, limit it to 1 request per second per account to avoid overloading the system. You can use ready-made solutions or implement it yourself.
+</div>
 
-For the POST request to /action, ensure to check the origin of the request. Only allow requests from our site to prevent users from abusing the endpoint.
+<ul>
+<li>For the GET request to /, limit it to 1 request per second per account to avoid overloading the system. You can use ready-made solutions or implement it yourself.</li>
 
+<li>For the POST request to /action, ensure to check the origin of the request. Only allow requests from our site to prevent users from abusing the endpoint.</li>
+</ul>
 # Additional comments: 
 Since this is just a module of the system, it is implied that authentication and authorization are handled by the authentication middleware
 but i still make a diagram with my Auth Middleware that i would implement.
